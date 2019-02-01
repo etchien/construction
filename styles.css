@@ -1,0 +1,16 @@
+body{
+	background-image:url("images/piscine.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+#formulaire{
+
+	position:absolute;
+	top:400px;
+	width: 800px;
+	padding-bottom: 200px;
+
+
+}
