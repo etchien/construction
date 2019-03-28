@@ -1,0 +1,81 @@
+
+<% include header %>
+
+
+
+
+
+  <form action="/" method="post" class="ui form">
+
+    <div class="field">
+
+      <label for="message" style="width: 500px; height:30px;">Message</label>
+
+      <textarea name="message" id="message"></textarea>
+
+      <label for="nom" style=" width: 500px;height:30px;"> Nom
+        <input type="text" name="nom">
+      </label>
+      <br>
+
+
+      <label for="prenom" style=" width: 500px;height:30px;">prenom
+        <input type="text" name="prenom">
+      </label>
+      <br>
+
+      <label for="pays" style=" width: 500px;height:30px;">Pays
+        <input type="text" name="pays">
+      </label>
+      <br>
+
+      <label for="ville" style=" width: 500px;height:30px;">ville
+        <input type="text" name="ville">
+      </label>
+      <br>
+
+       <label for="email" style=" width: 500px;height:30px;">email
+        <input type="email" name="email">
+      </label>
+      <br>
+    </div>
+
+      <button type="submit" class="ui blue labeled submit icon button">
+
+        <i class="icon edit"></i>Envoyer
+
+      </button>
+
+  </form>
+
+  <div class="ui comments">
+
+    <h3 class="ui dividing header">Commentaires</h3>
+
+       <% for (message of messages)  { %>
+
+       <div class="comment">
+
+        <div class="content">
+
+          <div class="test"><%= message.content %></div>
+
+
+        </div>
+
+       </div>
+
+       <% } %>
+
+  </div>
+
+
+
+
+
+<% include footer %>
+
+
+
+
+

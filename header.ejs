@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+  <html>
+
+  <head>
+        <title>Recette</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css">
+
+        <style type="text/css">
+
+          .main.container {
+
+            margin-top: 7em;
+          }
+
+        </style>
+
+
+  </head>
+
+    <body style="background-color: #8ACEF4;  ">
+
+
+
+      <div class="ui fixed inverted menu" style="text-align: center; padding-top: 4px">
+
+        <a href="/" class="header item">Accueil</a>
+        <a href="/" class="header item">Intégrer un groupe</a>
+        <a href="/" class="header item">les meilleures Recettes</a>
+        <a href="/" class="header item">Nos activités</a>
+        <a href="/" class="header item">Contactez-Nous</a>
+       </div>
+       <br>
+
+
+      <div>
+
+       <h1 style="text-align: center;text-transform: uppercase;background-color:orange; padding-top: 30px;">proposez nous une recette de chez vous !!!!</h1>
+
+      </div>
+
+
+      <div class="ui main container">
+
+         <% if (locals.flash && locals.flash.error) { %>
+
+        <div class="ui negative message">
+
+          <%= flash.error %>
+
+        </div>
+
+         <% } %>
+
+         <% if (locals.flash && locals.flash.error) { %>
+
+        <div class="ui positive message">
+
+          <%= flash.success %>
+
+        </div>
+
+         <% } %>
+
+
+
+
